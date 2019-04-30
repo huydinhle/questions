@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx
+  namespace: question2
+spec:
+  selector:
+    app: nginx
+    service: nginx
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
